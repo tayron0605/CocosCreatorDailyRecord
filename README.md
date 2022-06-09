@@ -19,3 +19,4 @@ Cocos安卓native接谷歌和Facebook踩坑
 5.google 12501问题(vpn)
 6.jsb绑定注意返回String类型，cocos文档中参数介绍和代码示例中的Ljava/lang/String;不一样 有穿插空格 必须严格匹配
 7.2.4.9安卓spine闪退问题 贴图要小于1024 并且是json不能用二进制
+8.app的bundle.gradle修改大版本号versionCode和versionName
