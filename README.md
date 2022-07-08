@@ -22,3 +22,6 @@ Cocos安卓native接谷歌和Facebook踩坑
 8.app的bundle.gradle修改大版本号versionCode和versionName
 # 2022.6.10
 1.安卓大版本更新迭代覆盖安装apk需要清理热更新可写目录 jsb.fileUtils.removeDirectory(jsb.fileUtils.getWritablePath());
+# 2022.7.8
+1.facebook登陆问题：安卓aab包经过上传Google play下载的apk包会被二次签名，需要把Google后台的.der证书下载下来通过keytool指令加入原本的keystore，然后将新的keystore生成密钥散列填入facebook后台
+2.jdk和openssl库路径加入系统环境变量
