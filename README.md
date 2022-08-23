@@ -25,3 +25,6 @@ Cocos安卓native接谷歌和Facebook踩坑
 # 2022.7.8
 1.facebook登陆问题：安卓aab包经过上传Google play下载的apk包会被二次签名，需要把Google后台的.der证书下载下来通过keytool指令加入原本的keystore，然后将新的keystore生成密钥散列填入facebook后台
 2.jdk和openssl库路径加入系统环境变量
+# 2022.8.23
+1.ccc2.4.9原生native下skeleton没有getTextureAtlas接口，getAttachment返回对象也没有region成员，会报错卡死
+2.ADMob广告返回内部错误nofill检查一下vpn，改为美国纽约节点
