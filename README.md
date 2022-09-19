@@ -28,3 +28,5 @@ Cocos安卓native接谷歌和Facebook踩坑
 # 2022.8.23
 1.ccc2.4.9原生native下skeleton没有getTextureAtlas接口，getAttachment返回对象也没有region成员，会报错卡死
 2.ADMob广告返回内部错误nofill检查一下vpn，改为美国纽约节点
+# 2022.9.19
+1.ccc2.4.9用了ParticleSystem3D要注意TrailModule,源码中cc.ParticleSystem3D.prototype.onLoad要判断一下if(this.trailModule.enable) this.trailModule.onInit(this);在new Pool的时候有大量GC开销所以要判断是否开启再init
