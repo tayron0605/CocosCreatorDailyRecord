@@ -30,3 +30,11 @@ Cocos安卓native接谷歌和Facebook踩坑
 2.ADMob广告返回内部错误nofill检查一下vpn，改为美国纽约节点
 # 2022.9.19
 1.ccc2.4.9用了ParticleSystem3D要注意TrailModule,源码中cc.ParticleSystem3D.prototype.onLoad要判断一下if(this.trailModule.enable) this.trailModule.onInit(this);在new Pool的时候有大量GC开销所以要判断是否开启再init
+# 2022.10.26
+1.定制原生引擎 spine局部换肤
+     a.python27需要32位版本
+     b.pyyaml安装
+     c.Cheetah-2.4.4.tar.gz安装
+     d.NDK_ROOT环境变量配置
+     e.修改SkeletonRenderer.cpp、SkeletonCacheAnimation.cpp、jsb-spine-skeleton.js(新增updateRegion方法)
+     f.python执行genbindings.py
