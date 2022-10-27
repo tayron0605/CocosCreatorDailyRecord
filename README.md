@@ -32,7 +32,7 @@ Cocos安卓native接谷歌和Facebook踩坑
 1.ccc2.4.9用了ParticleSystem3D要注意TrailModule,源码中cc.ParticleSystem3D.prototype.onLoad要判断一下if(this.trailModule.enable) this.trailModule.onInit(this);在new Pool的时候有大量GC开销所以要判断是否开启再init
 # 2022.10.26
 1.定制原生引擎 spine局部换肤
-     a.python27需要32位版本
+     a.python27需要32位版本(并配置环境变量PYTHON_BIN)
      b.pyyaml安装
      c.Cheetah-2.4.4.tar.gz安装
      d.NDK_ROOT环境变量配置
