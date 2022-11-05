@@ -38,3 +38,8 @@ Cocos安卓native接谷歌和Facebook踩坑
      d.NDK_ROOT环境变量配置
      e.修改SkeletonRenderer.cpp、SkeletonCacheAnimation.cpp、jsb-spine-skeleton.js(新增updateRegion方法)
      f.python执行genbindings.py
+# 2022.11.5
+1.原生spine二进制加载闪退
+     a.修改SkeletonBinary.cpp的readAttachment方法
+     b.在有皮肤的spine加载会有问题 要先保证readFloat全部读完 游标移位 否则region为NULL会有问题
+     c.详细在官方fix spine binary data read issue. #4229这个pr中
