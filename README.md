@@ -43,3 +43,5 @@ Cocos安卓native接谷歌和Facebook踩坑
      a.修改SkeletonBinary.cpp的readAttachment方法
      b.在有皮肤的spine加载会有问题 要先保证readFloat全部读完 游标移位 否则region为NULL会有问题
      c.详细在官方fix spine binary data read issue. #4229这个pr中
+# 2022.11.9
+1.spined的setEventListener底层是addlistener,对象销毁时记得getState().removelistener()
