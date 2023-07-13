@@ -45,3 +45,5 @@ Cocos安卓native接谷歌和Facebook踩坑
      c.详细在官方fix spine binary data read issue. #4229这个pr中
 # 2022.11.9
 1.spined的setEventListener底层是addlistener,对象销毁时记得getState().removelistener()
+# 2023.7.13
+1.构建安卓渠道包Variants的时候要修改gradle, 去除delete "${buildDir}/intermediates/merged_assets/${variant.dirName}", 改为delete variant.mergeAssets.outputDir, 否则构建时拷贝的资源都是旧的
