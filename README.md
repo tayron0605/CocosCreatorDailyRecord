@@ -47,3 +47,6 @@ Cocos安卓native接谷歌和Facebook踩坑
 1.spined的setEventListener底层是addlistener,对象销毁时记得getState().removelistener()
 # 2023.7.13
 1.构建安卓渠道包Variants的时候要修改gradle, 去除delete "${buildDir}/intermediates/merged_assets/${variant.dirName}", 改为delete variant.mergeAssets.outputDir, 否则构建时拷贝的资源都是旧的
+# 2024.5.11
+1.引擎2.4.11原生端SkeletonBinary.cpp中没有对mesh空指针做保护(mesh = _attachmentLoader->newMeshAttachment(*skin, String(name), String(path));)
+2.美术同学在制作spine的时候从其他工程拷贝过来进行修改，没有把不用到的骨骼删干净，这根骨骼如果在原工程中带有网格，那么就会导致这个bug，导出来的二进制skel文件在安卓端闪退
