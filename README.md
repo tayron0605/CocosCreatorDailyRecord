@@ -50,3 +50,5 @@ Cocos安卓native接谷歌和Facebook踩坑
 # 2024.5.11
 1.引擎2.4.11原生端SkeletonBinary.cpp中没有对mesh空指针做保护(mesh = _attachmentLoader->newMeshAttachment(*skin, String(name), String(path));)
 2.美术同学在制作spine的时候从其他工程拷贝过来进行修改，没有把不用到的骨骼删干净，这根骨骼如果在原工程中带有网格，那么就会导致这个bug，导出来的二进制skel文件在安卓端闪退
+# 2024.5.31
+1.微信小游戏https域名配置不能使用显式端口号
