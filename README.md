@@ -53,16 +53,16 @@ Cocos安卓native接谷歌和Facebook踩坑
 # 2024.5.31
 1.微信小游戏https域名配置不能使用显式端口号
 # 2024.12.18
-1.安卓原生wss问题：
-a.需要new WebSocket(url,null,pemurl)
-b.客户端只认cer格式的证书文件，需要把pem转成cer
-c.根据网站xxx.pem获取安卓websocket所需的根证书的方法
-d.第一步，打开window操作系统 (mac下面不知道怎么导出证书)
-e.第二部, 将网站证书xxxx.pem更名为xxx.cer
-f.第三部, 双击xxx.cer
-g.选择[证书路径]选项卡
-h.鼠标点击下方证书树的根节点
-i.鼠标点击下方查看证书按钮
-j.点击[证书详情]选项卡
-k.点击[导出证书]
-l.选择 base64模式导出的文件就是 安卓Websocket第三个参数所需的文件
+## 安卓原生wss问题：
+### 需要new WebSocket(url,null,pemurl)
+### 客户端只认cer格式的证书文件，需要把pem转成cer
+### 根据网站xxx.pem获取安卓websocket所需的根证书的方法
+### 第一步，打开window操作系统 (mac下面不知道怎么导出证书)
+### 第二步, 将网站证书xxxx.pem更名为xxx.cer
+### 第三步, 双击xxx.cer
+### 选择[证书路径]选项卡
+### 鼠标点击下方证书树的根节点
+### 鼠标点击下方查看证书按钮
+### 点击[证书详情]选项卡
+### 点击[导出证书]
+### 选择 base64模式导出的文件就是 安卓Websocket第三个参数所需的文件
