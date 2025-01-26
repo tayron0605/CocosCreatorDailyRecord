@@ -66,3 +66,7 @@ Cocos安卓native接谷歌和Facebook踩坑
 ### 点击[证书详情]选项卡
 ### 点击[导出证书]
 ### 选择 base64模式导出的文件就是 安卓Websocket第三个参数所需的文件
+# 2025.1.26
+## label渲染泰文泰语问题
+### 换行截断音标，修改text-utils.js中的label_wordRex,label_lastWordRex,label_lastEnglish,label_firstEnglish
+### cacheMode不能用char模式 会丢失音标
