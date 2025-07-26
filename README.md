@@ -70,3 +70,12 @@ Cocos安卓native接谷歌和Facebook踩坑
 ## label渲染泰文泰语问题
 ### 换行截断音标，修改text-utils.js中的label_wordRex,label_lastWordRex,label_lastEnglish,label_firstEnglish
 ### cacheMode不能用char模式 会丢失音标
+# 2025.7.26
+### 2D相机坐标和缩放改变后 获取本地坐标
+let screenPoint = evt.touch.getLocation();
+console.log("screenPoint:", screenPoint.x,screenPoint.y);
+let worldPoint = cc.Camera.main.getScreenToWorldPoint(screenPoint);//世界坐标
+console.log("w_pos:", worldPoint.x,worldPoint.y);
+let localPoint = this.mapNode.convertToNodeSpaceAR(worldPoint);//本地坐标
+console.log("l_pos:", localPoint.x,localPoint.y);
+this._curTouchPos.setPosition(localPoint);
