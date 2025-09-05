@@ -82,5 +82,5 @@ this._curTouchPos.setPosition(localPoint);
 
 # 2025.9.4
 ### 安卓升级googlePlay 16kb相关
-jdk 17, android api 35, gradle 8.7，agp 8.6.0，ndk 26.1.10909125
+jdk 17(在settings里面的gradle配置选择下载), android api 35, gradle 8.7，agp 8.6.0，ndk 26.1.10909125
 然后在libcocos2dx的build.gradle中增加namespace 'org.cocos2dx.lib'
