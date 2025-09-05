@@ -86,6 +86,7 @@ jdk 17(在settings里面的gradle配置选择下载)
 android api 35
 gradle 8.
 agp 8.6.
-ndk 26.1.10909125
+ndk 28.2.13676358
 然后在libcocos2dx的build.gradle中增加namespace 'org.cocos2dx.lib'
 去这里https://github.com/cocos/cocos-engine-external/搜索libuv.a下载覆盖本地
+注：如果Project Structure中指定了各个工程的ndk版本，要把local.properties中的ndk.dir删了
