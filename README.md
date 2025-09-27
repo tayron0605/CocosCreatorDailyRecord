@@ -90,3 +90,6 @@ ndk 28.2.13676358
 然后在libcocos2dx的build.gradle中增加namespace 'org.cocos2dx.lib'
 去这里https://github.com/cocos/cocos-engine-external/搜索libuv.a下载覆盖本地
 注：如果Project Structure中指定了各个工程的ndk版本，要把local.properties中的ndk.dir删了
+
+# 2025.9.27
+### 安卓接入max聚合applovin发现import com.applovin.sdk失败，要去除build.gradle中cocos打包的所有混淆相关配置
